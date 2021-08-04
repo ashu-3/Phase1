@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Blog-Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+    crossorigin="anonymous"/>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src='js/main.js'></script>
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- Nav bar using flex -->
+        <header>
+            <h1>Welcome to SimpliBlog</h1>
+            <nav>
+                <ul>
+                    <li class="home"><a href="#">Home</a></li>
+                    <li class="aboutUs"><a href="aboutus.html">About Us</a></li>
+                    <li class="contactUs"><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Section using Bootstrap-->
+        <section>
+            <div class="container">
+                <h3>Add your Blog here</h3>
+
+                <div class="row">
+                    <div class="offset-2 col-2">
+                        <p id="message">Added succesfulyy !!</p>
+                    </div>
+                </div>
+
+                <form class="form-class" method="POST">
+                    <div class="row edit-section">
+                        <div class="col-2">
+                            <lable>Title:</lable>
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="blog-title" id="blog-title" name="title" />
+                        </div> 
+                    </div>
+
+                    <div id="blog-details">
+                        <div class="row">
+                            <div class="col-2">
+                                <lable>Description</lable>
+                            </div>
+                            <div class="col-6">
+                            <textarea name="blog-description" id="blog-textarea" cols="32" rows="4" ></textarea>
+                            </div> 
+                        </div>
+
+
+                        <div class="row">
+                            <div class="offset-2 col-2 add-button">
+                                <input type="button" class="btn btn-primary" value="ADD" onClick="addData()" />
+                            </div>
+                            <div class="col-2 reset-button">
+                                <input type="button" class="btn btn-light" value="RESET" onClick="resetData()" />
+                            </div> 
+                        </div>
+                    </div>
+                </form>  
+
+            </div>
+
+            <div class="row blog-grid" id="row-grid">
+
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Designed by XYZ</p>
+            <p>&copy 2021</p>
+        </footer>
+
+    </div>   
+    
+</body>
+</html>

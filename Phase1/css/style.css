@@ -1,0 +1,169 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+.wrapper {
+    position: relative;
+}
+
+header {
+    margin-top: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #222;
+}
+
+p {
+    color: #777;
+}
+
+a {
+    color: #fff;
+    border-bottom: 2px solid transparent;
+}
+
+a:hover {
+    color:#fff;
+    text-decoration: none;
+    border-bottom: 2px solid rgb(226, 214, 50);
+}
+
+input {
+    width:45%;
+}
+
+nav {
+    margin-top:8px;
+    height: 35px;
+    background-color:#5047d8;
+}
+
+ul {
+    display: flex;
+    column-gap: 20px;
+    height: 100%;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.home {
+    margin-left: auto;
+}
+
+section {
+    overflow: hidden;
+   
+}
+
+.container {
+   margin-top: 20px;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.edit-section {
+    margin-top: 20px;
+}
+
+.add-button {
+    padding-right: 0;
+}
+
+.reset-button {
+    padding-left: 0;
+}
+
+.btn-light {
+    background-color: #e2e6ea;
+}
+
+
+label {
+    margin-right: 5px;
+}
+
+.blog-grid {
+    text-align: center;
+    padding: 20px;
+    margin-right: 5%;
+    margin-bottom: 40px;
+}
+
+.column-grid {
+    border:2px solid grey;
+    margin-bottom: 40px;
+    height: auto;
+}
+
+.column-grid .deleteLink {
+    display: none;
+}
+
+.column-grid:hover .deleteLink {
+    display: inline-block;
+}
+
+.column-grid:hover {
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.title-grid {
+    font-weight: bold;
+    padding-bottom: 5px;
+    text-shadow: 2px 3px 3px rgb(0 0 0 / 15%);
+    display: inline-block;
+}
+
+.description-grid {
+    text-align: left;
+}
+
+.deleteLink {
+    color:red;
+    float: right;
+    outline: none;
+    border: none;
+}
+
+.deleteLink:hover {
+    color: red;
+    transition: transform .2s;
+    outline: none;
+    border: none;
+    transform: rotate(180deg);
+    font-weight: bold;
+
+}
+
+
+footer {
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    right:0;
+    height: 80px;
+    position: fixed;
+    background-color: #4d4848;
+}
+
+#message {
+    position: absolute;
+    display: none;
+    color: rgb(51, 134, 51);
+}
+
+footer p {
+    color: #fff;
+    margin-top: 10px;
+}
+
